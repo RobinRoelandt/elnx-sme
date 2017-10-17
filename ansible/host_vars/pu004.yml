@@ -1,0 +1,15 @@
+# host_vars/pu004.yml
+---
+
+rhbase_firewall_allow_services:
+  - https
+
+mariadb_bind_address: '192.0.2.50'
+
+mariadb_users:
+  - name: robin
+    password: robin
+    priv: wordpress_db.*:ALL
+
+wordpress_user: robin
+wordpres_password: robin

@@ -1,3 +1,21 @@
 # group_vars/all.yml
 # Variables visible to all nodes
 ---
+rhbase_repositories:
+  - epel-release
+rhbase_install_packages:
+  - bash-completion
+  - vim-enhanced
+  - bind-utils
+  - git
+  - nano
+  - tree
+  - wget
+rhbase_users:
+    - name: robin
+      comment: 'Robin Roelandt'
+      groups:
+         - wheel
+         - users
+      password: '$6$MKrF0GjCbSrR6Ii6$X/WcXcAbStkphKt3CCF4F1ayF3Y0cM.c9KfeomMbtSH.ShKxzOoPSXhZwA5OKi36k2kUFxkKVq/YnmEvNyt9G.'
+rhbase_motd: true
