@@ -8,14 +8,15 @@ rhbase_firewall_allow_services:
 httpd_scripting: 'php'
 
 mariadb_databases:
-  - db
+  - name: wordpress
 
 mariadb_users:
-  - name: wp_user
-    password: fogMeHud8
-    priv: '*.*:ALL,GRANT'
+  - name: wordpressuser
+    password: VbfCmg2h9cuM8W77
+    priv: '*.*:ALL'
 
-mariadb_root_password: fogMeHud8
+mariadb_root_password: VbfCmg2h9cuM8W77
 
-wordpress_user: wp_user
-wordpress_password: CorkIgWac
+wordpress_database: wordpress
+wordpress_user: robin
+wordpress_password: 4eq4ZNmyL3qvhVas
