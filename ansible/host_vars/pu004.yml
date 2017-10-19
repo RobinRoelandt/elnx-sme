@@ -7,14 +7,15 @@ rhbase_firewall_allow_services:
 
 httpd_scripting: 'php'
 
+mariadb_databases:
+  - db
+
 mariadb_users:
   - name: wp_user
     password: fogMeHud8
-    priv: wp_db.*:ALL
+    priv: '*.*:ALL,GRANT'
 
 mariadb_root_password: fogMeHud8
 
-wordpress_database: wp_db
 wordpress_user: wp_user
 wordpress_password: CorkIgWac
-wordpress_home_url: http://192.0.2.50/wordpress/
