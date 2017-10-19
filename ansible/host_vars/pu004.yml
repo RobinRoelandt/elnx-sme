@@ -11,9 +11,10 @@ mariadb_databases:
   - name: wordpress
 
 mariadb_users:
-  - name: wordpressuser
+  - name: robin
     password: VbfCmg2h9cuM8W77
-    priv: '*.*:ALL'
+    priv: '*.*:ALL,GRANT'
+    state: present
 
 mariadb_root_password: VbfCmg2h9cuM8W77
 
