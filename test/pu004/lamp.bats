@@ -13,7 +13,7 @@ sut=192.0.2.50
 mariadb_root_password=VbfCmg2h9cuM8W77
 wordpress_database=wordpress
 wordpress_user=robin
-wordpress_password=4eq4ZNmyL3qvhVas
+wordpress_password=VbfCmg2h9cuM8W77
 #}}}
 
 # Test cases

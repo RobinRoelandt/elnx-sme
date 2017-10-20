@@ -1,5 +1,11 @@
 # site.yml
 ---
+- hosts: pu001
+  become: true
+  roles:
+    - bertvv.rh-base
+    - bertvv.bind
+
 - hosts: pu004
   become: true
   roles:
