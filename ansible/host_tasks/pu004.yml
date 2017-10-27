@@ -5,7 +5,7 @@
     - DELETE FROM mysql.user WHERE User=''
   changed_when: False
 
-- name: verwijder test db en toegan tot test db
+- name: verwijder test db en toegang tot test db
   command: 'mysql -ne "{{ item }}"'
   with_items:
     - DROP DATABASE test
