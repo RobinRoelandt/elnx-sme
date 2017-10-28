@@ -35,7 +35,7 @@ bind_acls:
   - name: acl1
     match_list:
       - 192.0.2.0/24
-      - 176.16.0.0/24
+      - 176.16.0.0/16
 
 bind_zone_master_server_ip: 192.0.2.10
 
