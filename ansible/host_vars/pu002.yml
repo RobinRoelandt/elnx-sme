@@ -1,0 +1,7 @@
+rhbase_firewall_allow_services:
+  - dns
+
+bind_packages:
+  - python-netaddr
+  - bind
+  - bind-utils
