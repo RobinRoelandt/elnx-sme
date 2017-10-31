@@ -22,5 +22,5 @@ wordpress_database: wordpress
 wordpress_user: robin
 wordpress_password: VbfCmg2h9cuM8W77
 
-SSLCertificateFile: /etc/pki/tls/certs/ca.crt
-SSLCertificateKeyFile: /etc/pki/tls/private/ca.key
+httpd_SSLCertificateFile: /etc/pki/tls/certs/ca.crt
+httpd_SSLCertificateKeyFile: /etc/pki/tls/private/ca.key

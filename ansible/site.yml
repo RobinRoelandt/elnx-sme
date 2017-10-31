@@ -20,7 +20,6 @@
     - bertvv.mariadb
     - bertvv.httpd
     - bertvv.wordpress
-  tasks:
-  - copy: src=/vagrant/Certificaat/ca.crt dest=/etc/pki/tls/certs
-  - copy: src=/vagrant/Certificaat/ca.key dest=/etc/pki/tls/private/ca.key
-  - copy: src=/vagrant/Certificaat/ca.csr dest=/etc/pki/tls/private/ca.csr
+  pre_tasks:
+  - copy: src=files/ca.crt dest=/etc/pki/tls/certs
+  - copy: src=files/ca.key dest=/etc/pki/tls/private/ca.key
