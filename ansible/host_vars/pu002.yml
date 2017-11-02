@@ -1,7 +1,26 @@
 rhbase_firewall_allow_services:
   - dns
 
-bind_packages:
-  - python-netaddr
-  - bind
-  - bind-utils
+bind_acls:
+    - name: acl1
+      match_list:
+        - 192.0.2.0/24
+        - 176.16.0.0/16
+
+bind_zone_name: 'avalon.lan'
+
+bind_zone_master_server_ip: 192.0.2.10
+
+bind_zone_networks:
+    - '192.0.2'
+    - '172.16'
+
+bind_zone_name_servers:
+  - pu001
+  - pu002
+
+bind_allow_query:
+  - any
+
+bind_listen_ipv4:
+  - any

@@ -12,6 +12,10 @@
     - bertvv.rh-base
     - bertvv.bind
 
+- hosts: pu003
+  become: true
+  roles:
+    - bertvv.rh-base
 
 - hosts: pu004
   become: true

@@ -2,42 +2,22 @@
 ---
 
 rhbase_firewall_allow_services:
-  - http
-  - https
   - dns
-
-bind_packages:
-  - python-netaddr
-  - bind
-  - bind-utils
-
-bind_zone_name:
-  - name: 'avalon.lan'
-
-bind_forwarders:
-  - '8.8.8.8'
-  - '8.8.4.4'
-
-bind_recursion: true
-
-bind_allow_update:
-  - "none"
-
-bind_recursion: false
-
-bind_forward_only: false
-
-bind_zone_networks:
-  - '192.0.2'
-  - '172.16'
 
 bind_acls:
   - name: acl1
     match_list:
-      - 192.0.2.0/24
-      - 176.16.0.0/16
+      - 192.0.2/24
+      - 176.16/16
+
+bind_zone_name:
+  - name: 'avalon.lan'
 
 bind_zone_master_server_ip: 192.0.2.10
+
+bind_zone_networks:
+  - '192.0.2'
+  - '172.16'
 
 bind_zone_name_servers:
   - pu001
@@ -85,3 +65,16 @@ bind_allow_query:
 
 bind_listen_ipv4:
   - any
+
+bind_forwarders:
+  - '8.8.8.8'
+  - '8.8.4.4'
+
+bind_recursion: true
+
+bind_allow_update:
+  - "none"
+
+bind_recursion: false
+
+bind_forward_only: false
