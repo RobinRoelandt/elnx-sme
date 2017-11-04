@@ -16,13 +16,6 @@ bind_zone_networks:
 bind_zone_name_servers:
   - pu001
   - pu002
-  - pu003
-  - pu004
-  - pr001
-  - pr002
-  - pr010
-  - pr011
-  - r001
 
 bind_zone_hosts:
   - name: pu001
@@ -72,7 +65,7 @@ bind_allow_query:
 bind_listen_ipv4:
   - any
 
-bind_recursion: true
+bind_recursion: false
 
 bind_allow_update:
   - "none"

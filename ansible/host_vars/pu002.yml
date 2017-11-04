@@ -13,13 +13,7 @@ bind_zone_networks:
 bind_zone_name_servers:
   - pu001
   - pu002
-  - pu003
-  - pu004
-  - pr001
-  - pr002
-  - pr010
-  - pr011
-
+  
 bind_allow_query:
   - any
 

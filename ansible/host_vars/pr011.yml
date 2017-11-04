@@ -1,0 +1,14 @@
+---
+
+rhbase_firewall_allow_services:
+  - samba
+
+samba_users:
+  - name: robin
+    password: robin
+
+samba_netbios_name: FILES
+
+samba_shares:
+  - name: public
+    group: users

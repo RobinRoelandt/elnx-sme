@@ -27,3 +27,9 @@
   pre_tasks:
   - copy: src=files/ca.crt dest=/etc/pki/tls/certs
   - copy: src=files/ca.key dest=/etc/pki/tls/private/ca.key
+
+- hosts: pr011
+  become: true
+  roles:
+    - bertvv.rh-base
+    - bertvv.samba
