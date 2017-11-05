@@ -11,6 +11,7 @@ rhbase_install_packages:
   - nano
   - tree
   - wget
+rhbase_user_groups: samba
 rhbase_users:
     - name: robin
       comment: 'Robin Roelandt'
@@ -19,5 +20,5 @@ rhbase_users:
          - users
       password: '$6$MKrF0GjCbSrR6Ii6$X/WcXcAbStkphKt3CCF4F1ayF3Y0cM.c9KfeomMbtSH.ShKxzOoPSXhZwA5OKi36k2kUFxkKVq/YnmEvNyt9G.'
 rhbase_motd: true
-rhbase_ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDmbUjVcBLTKQpZwxRRniXiyrCW+y5G9H96UPx9Bb9a9UfH7dXuo349AmuXtlxp9g0hA7n8uriTy5AiR/VKSWRRYq3zYTPMutHPftmHZXUgi/k5dg34bDtPfy0hnVd96kr+15o+3zWK+MK/5U+1jw1zyE1xkwHMk1DIj/uBUz7V9pwtrZiFKGnIMzvWB3RD0YHpdYfXkMR985RaWcvSY9lAYLwydLkEZkotzMgSwYFpUovyFGkRtZrjti4MtTs0vSb8YgQmfrah+daaGtWmLpbMwlYOefA2tAppZC0HRcuMG1fWk5PfnqsIlGg7KfBiqDaB/yGz7UTQAesWwvpOBktd robin@Laptop-Robin
-rhbase_ssh_user: robin
+#rhbase_ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDmbUjVcBLTKQpZwxRRniXiyrCW+y5G9H96UPx9Bb9a9UfH7dXuo349AmuXtlxp9g0hA7n8uriTy5AiR/VKSWRRYq3zYTPMutHPftmHZXUgi/k5dg34bDtPfy0hnVd96kr+15o+3zWK+MK/5U+1jw1zyE1xkwHMk1DIj/uBUz7V9pwtrZiFKGnIMzvWB3RD0YHpdYfXkMR985RaWcvSY9lAYLwydLkEZkotzMgSwYFpUovyFGkRtZrjti4MtTs0vSb8YgQmfrah+daaGtWmLpbMwlYOefA2tAppZC0HRcuMG1fWk5PfnqsIlGg7KfBiqDaB/yGz7UTQAesWwvpOBktd robin@Laptop-Robin
+#rhbase_ssh_user: robin

@@ -1,14 +1,206 @@
 ---
-
 rhbase_firewall_allow_services:
   - samba
+  - ftp
+
+rhbase_user_groups:
+  - public
+  - management
+  - it
+  - sales
+  - technical
+  - management
+
+rhbase_users:
+  - name: robin
+    comment: 'Robin Roelandt'
+    groups:
+       - wheel
+       - users
+       - public
+       - it
+    password: '$6$MKrF0GjCbSrR6Ii6$X/WcXcAbStkphKt3CCF4F1ayF3Y0cM.c9KfeomMbtSH.ShKxzOoPSXhZwA5OKi36k2kUFxkKVq/YnmEvNyt9G.'
+  - name: stevenh
+    comment: 'Steven Hermans, CEO'
+    password: stevenh
+    groups:
+      - public
+      - management
+  - name: stevenv
+    comment: 'Steven van Daele, software engineer'
+    password: stevenv
+    groups:
+      - public
+      - technical
+  - name: leend
+    comment: 'Leen De Meester, software engineer'
+    password: leend
+    groups:
+      - public
+      - technical
+  - name: svena
+    comment: 'Sven Aerens, Acount manager'
+    password: svena
+    groups:
+      - public
+      - sales
+  - name: nehirb
+    comment: 'Behir BaÅŸar, System engineer'
+    password: nehirb
+    groups:
+      - public
+      - it
+  - name: alexanderd
+    comment: 'Alexander De Coninck, software engineer'
+    password: alexanderd
+    groups:
+      - public
+      - technical
+  - name: krisv
+    comment: 'Kris Vanhaverbeke, CFO'
+    password: krisv
+    groups:
+      - public
+      - management
+  - name: benoitp
+    comment: 'Benoit Pluquet, account manager'
+    password: benoitp
+    groups:
+      - public
+      - sales
+  - name: anc
+    comment: 'An Coppens, Graphical designer'
+    password: anc
+    groups:
+      - public
+      - technical
+  - name: elenaa
+    comment: 'Elena Andreev, Office Manager'
+    password: elenaa
+    groups:
+      - public
+      - management
+  - name: evyt
+    comment: 'Evy Tilleman, Technical Writer'
+    password: evyt
+    groups:
+      - public
+      - technical
+  - name: christophev
+    comment: 'Christophe Van der Meersche, System Administrator'
+    password: christophev
+    groups:
+      - public
+      - it
+  - name: stefaanv
+    comment: 'Stefaan Vernimmen, Support Specialist'
+    password: stefaanv
+    groups:
+      - public
+      - technical
+
+samba_workgroup: AVALON
+samba_server_string: 'Welcome to the AVALON samba server!'
 
 samba_users:
   - name: robin
     password: robin
+    groups:
+      - it
+      - public
+  - name: stevenh
+    password: stevenh
+    groups:
+      - public
+      - management
+  - name: stevenv
+    password: stevenv
+    groups:
+      - public
+      - technical
+  - name: leend
+    password: leend
+    groups:
+      - public
+      - technical
+  - name: svena
+    password: svena
+    groups:
+      - public
+      - sales
+  - name: nehirb
+    password: nehirb
+    groups:
+      - public
+      - it
+  - name: alexanderd
+    password: alexanderd
+    groups:
+      - public
+      - technical
+  - name: krisv
+    password: krisv
+    groups:
+      - public
+      - management
+  - name: benoitp
+    password: benoitp
+    groups:
+      - public
+      - sales
+  - name: anc
+    password: anc
+    groups:
+      - public
+      - technical
+  - name: elenaa
+    password: elenaa
+    groups:
+      - public
+      - management
+  - name: evyt
+    password: evyt
+    groups:
+      - public
+      - technical
+  - name: christophev
+    password: christophev
+    groups:
+      - public
+      - it
+  - name: stefaanv
+    password: stefaanv
+    groups:
+      - public
+      - technical
 
 samba_netbios_name: FILES
 
 samba_shares:
   - name: public
-    group: users
+    comment: 'public share'
+    group: public
+    write_list: +public
+  - name: management
+    comment: 'management share'
+    group: management
+    valid_users: +management
+    write_list: +management
+  - name: technical
+    comment: 'technical share'
+    group: technical
+    valid_users: +public
+    write_list: +technical
+  - name: sales
+    comment: 'sales share'
+    group: sales
+    valid_users: +sales, +management
+    write_list: +sales
+  - name: it
+    comment: 'it share'
+    group: it
+    valid_users: +it, +management
+    write_list: +it
+
+vsftpd_anonymous_enable: false
+vsftpd_local_enable: true

@@ -8,8 +8,8 @@
 # Variables
 #
 sut_ip=172.16.0.11   # IP of the System Under Test
-admin_user=bert      # User with admin privileges
-admin_password=bert
+admin_user=robin      # User with admin privileges
+admin_password=robin
 testfile="tst${RANDOM}"
 
 # Useful return codes
