@@ -3,6 +3,8 @@
 
 rhbase_firewall_allow_services:
   - dns
+  - http
+  - https
 
 bind_zone_name: 'avalon.lan'
 
@@ -16,10 +18,6 @@ bind_zone_networks:
 bind_zone_name_servers:
   - pu001
   - pu002
-
-bind_zone_mail_server:
-  - name: pu003
-    preference: 10
 
 bind_zone_hosts:
   - name: pu001
@@ -39,7 +37,7 @@ bind_zone_hosts:
     aliases:
       - www
   - name: pr001
-    ip: 176.16.0.2
+    ip: 172.16.0.2
     aliases:
       - dhcp
   - name: pr002
@@ -55,6 +53,9 @@ bind_zone_hosts:
     aliases:
       - files
 
+bind_zone_mail_servers:
+  - name: pu003
+    preference: 10
 
 bind_allow_query:
   - any
@@ -62,7 +63,4 @@ bind_allow_query:
 bind_listen_ipv4:
   - any
 
-bind_recursion: false
-
-bind_allow_update:
-  - "none"
+bind_recursion: true
