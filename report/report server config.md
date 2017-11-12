@@ -3,7 +3,11 @@
 - Student name: Robin Roelandt
 - Github repo: <https://github.com/RobinRoelandt/elnx-sme.git>
 
-Server setup
+## Doel van de taak
+
+- Basis opstelling server
+- Installeren correcte rollen en packages
+- Configureren rollen
 
 ## Test plan
 
@@ -27,7 +31,7 @@ Om de opstelling te testen dienen we 1 host op te zetten. Hiervoor wordt het ![s
 De host wordt opgezet met het commando 'vagrant up pu004' in git bash.
 Na het voltooien van de installatie kan er worden geconnecteerd met de host door het commando 'vagrant ssh pu004' en door de meegegeven tests kan de werking van de server geverifieërd worden (te gebruiken commando: sudo /vagrant/test/runbats.sh).
 
-![Succesvolle tests server configuratie](/report/Screenshots/Server configuration.jpg)
+![Succesvolle tests server configuratie](https://github.com/RobinRoelandt/elnx-sme/blob/master/report/Screenshots/Server%20configuration.JPG)
 
 ## Resources
 
