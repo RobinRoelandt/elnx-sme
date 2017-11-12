@@ -11,8 +11,6 @@
 
 ## Test plan
 
-How are you going to verify that the requirements are met? The test plan is a detailed checklist of actions to take, including the expected result for each action, in order to prove your system meets the requirements. Part of this is running the automated tests, but it is not always possible to validate *all* requirements throught these tests.
-
 Het controleren kan volledig gebeuren via de geautomatiseerde test. Hiervoor moet 1 host opgezet worden met de correcte rol om de packages te installeren en correct te configureren.
 
 ## Procedure/Documentation
