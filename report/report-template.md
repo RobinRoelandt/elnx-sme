@@ -1,7 +1,7 @@
 # Enterprise Linux Lab Report
 
-- Student name: 
-- Github repo: <https://github.com/HoGentTIN/elnx-USER.git>
+- Student name: Robin Roelandt
+- Github repo: <https://github.com/RobinRoelandt/elnx-sme>
 
 Describe the goals of the current iteration/assignment in a short sentence.
 

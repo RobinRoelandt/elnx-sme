@@ -34,3 +34,7 @@
     - bertvv.rh-base
     - bertvv.samba
     - bertvv.vsftpd
+
+- hosts: r001
+  become: true
+  roles: []
