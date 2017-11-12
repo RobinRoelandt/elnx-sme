@@ -35,7 +35,7 @@ De testpagina van Apache is te zien via deze ![link](http://192.0.2.50).
 ## Resources
 
 - ![Aanmaken ssl certificaten](https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs)
-- ![rhbase rol](https://github.com/bertvv/ansible-role-rh-base)
+- ![Rhbase rol](https://github.com/bertvv/ansible-role-rh-base)
 - ![MariaDB rol](https://github.com/bertvv/ansible-role-mariadb)
 - ![Httpd rol](https://github.com/bertvv/ansible-role-httpd)
 - ![Wordpress rol](https://github.com/bertvv/ansible-role-wordpress)
