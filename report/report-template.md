@@ -3,7 +3,9 @@
 - Student name: Robin Roelandt
 - Github repo: <https://github.com/RobinRoelandt/elnx-sme>
 
-Describe the goals of the current iteration/assignment in a short sentence.
+## Doel van de taak
+
+- Describe the goals of the current iteration/assignment in a short sentence.
 
 ## Test plan
 
