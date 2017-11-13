@@ -11,7 +11,7 @@
   roles:
     - bertvv.rh-base
     - bertvv.bind
-    
+
 - hosts: pu004
   become: true
   roles:
@@ -29,6 +29,11 @@
     - bertvv.rh-base
     - bertvv.samba
     - bertvv.vsftpd
+- hosts: pr001
+  become: true
+  roles:
+    - bertvv.rh-base
+    - bertvv.dhcp
 
 - hosts: r001
   become: true
