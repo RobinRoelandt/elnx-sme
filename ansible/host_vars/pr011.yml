@@ -23,24 +23,28 @@ rhbase_users:
   - name: stevenh
     comment: 'Steven Hermans, CEO'
     password: stevenh
+    shell: /sbin/nologin
     groups:
       - public
       - management
   - name: stevenv
     comment: 'Steven van Daele, software engineer'
     password: stevenv
+    shell: /sbin/nologin
     groups:
       - public
       - technical
   - name: leend
     comment: 'Leen De Meester, software engineer'
     password: leend
+    shell: /sbin/nologin
     groups:
       - public
       - technical
   - name: svena
     comment: 'Sven Aerens, Acount manager'
     password: svena
+    shell: /sbin/nologin
     groups:
       - public
       - sales
@@ -53,12 +57,14 @@ rhbase_users:
   - name: alexanderd
     comment: 'Alexander De Coninck, software engineer'
     password: alexanderd
+    shell: /sbin/nologin
     groups:
       - public
       - technical
   - name: krisv
     comment: 'Kris Vanhaverbeke, CFO'
     password: krisv
+    shell: /sbin/nologin
     groups:
       - public
       - management
@@ -71,18 +77,21 @@ rhbase_users:
   - name: anc
     comment: 'An Coppens, Graphical designer'
     password: anc
+    shell: /sbin/nologin
     groups:
       - public
       - technical
   - name: elenaa
     comment: 'Elena Andreev, Office Manager'
     password: elenaa
+    shell: /sbin/nologin
     groups:
       - public
       - management
   - name: evyt
     comment: 'Evy Tilleman, Technical Writer'
     password: evyt
+    shell: /sbin/nologin
     groups:
       - public
       - technical
@@ -95,12 +104,14 @@ rhbase_users:
   - name: stefaanv
     comment: 'Stefaan Vernimmen, Support Specialist'
     password: stefaanv
+    shell: /sbin/nologin
     groups:
       - public
       - technical
 
 samba_workgroup: AVALON
 samba_server_string: 'Welcome to the AVALON samba server!'
+samba_load_printers: false
 
 samba_users:
   - name: robin
@@ -204,3 +215,4 @@ samba_shares:
 
 vsftpd_anonymous_enable: false
 vsftpd_local_enable: true
+vsftpd_local_root: /srv/shares/

@@ -5,11 +5,14 @@
 
 ## Doel van de taak
 
-- Describe the goals of the current iteration/assignment in a short sentence.
+- Installeren van master en slave DNS
+- Configureren van DNS
 
 ## Test plan
 
 How are you going to verify that the requirements are met? The test plan is a detailed checklist of actions to take, including the expected result for each action, in order to prove your system meets the requirements. Part of this is running the automated tests, but it is not always possible to validate *all* requirements throught these tests.
+
+Er zijn voor deze servers geautomatiseerde tests voorzien, maar de werking kan ook gecontroleerd worden met behulp van verschillende commando's (zoals dig)
 
 ## Procedure/Documentation
 
