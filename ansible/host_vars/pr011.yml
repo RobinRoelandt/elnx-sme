@@ -22,25 +22,45 @@ rhbase_users:
        - it
   - name: stevenh
     comment: 'Steven Hermans, CEO'
+<<<<<<< HEAD
     password: '$6$L5oqw6iqXdSdr3Rq$vTgND.PBtiz5rsmOnnIYua5O1BtHH6N/JNrUi.3qdau9scLl/Ex.d2T8Jh50O0Gry0Fuut556a1cSL6ddqEs8/'
+=======
+    password: stevenh
+    shell: /sbin/nologin
+>>>>>>> cae1049bdc0acc361f362667e1a208b9c1e61003
     groups:
       - public
       - management
   - name: stevenv
     comment: 'Steven van Daele, software engineer'
+<<<<<<< HEAD
     password: '$6$O8UFipeH1DEPeN/x$Ua4LiQ9FjI2nkHqoavp1D3Wo4HjtrpyVGzUb2Hp7RGXuVjHBadwgpAXMZ.a0YDzvRoZD5myFBUavpQQo4bWA3.'
+=======
+    password: stevenv
+    shell: /sbin/nologin
+>>>>>>> cae1049bdc0acc361f362667e1a208b9c1e61003
     groups:
       - public
       - technical
   - name: leend
     comment: 'Leen De Meester, software engineer'
+<<<<<<< HEAD
     password: '$6$TM.MsRhcl.1N0hpq$MQ8jtellU2ejUv/WC8HJ1gqhnRezVG2EQQPSLKR8DONUdYfcUQinieaCpNAKYUu42OUq5ZXfaBQaBSU7c0irN/'
+=======
+    password: leend
+    shell: /sbin/nologin
+>>>>>>> cae1049bdc0acc361f362667e1a208b9c1e61003
     groups:
       - public
       - technical
   - name: svena
     comment: 'Sven Aerens, Acount manager'
+<<<<<<< HEAD
     password: '$6$.1kgQ0nvUnfCA3xn$JbgFXeLL5DL8WEaDEXuxI34rtNNDMXxvWvafq3MHd2XPRAx0xjSOKwG5dIxIJIQZ9Tq12S7homRQyRClPxMpC0'
+=======
+    password: svena
+    shell: /sbin/nologin
+>>>>>>> cae1049bdc0acc361f362667e1a208b9c1e61003
     groups:
       - public
       - sales
@@ -52,13 +72,23 @@ rhbase_users:
       - it
   - name: alexanderd
     comment: 'Alexander De Coninck, software engineer'
+<<<<<<< HEAD
     password: '$6$gjAmhvf8z3xFiJTA$oUSZdQc7HhOcQyFnhlF9r3a28HKwP2w7nJiDNxIhoZ16a5dyr.ZbGAlF556lpiV5uviH5awmPqUTqECSFTym01'
+=======
+    password: alexanderd
+    shell: /sbin/nologin
+>>>>>>> cae1049bdc0acc361f362667e1a208b9c1e61003
     groups:
       - public
       - technical
   - name: krisv
     comment: 'Kris Vanhaverbeke, CFO'
+<<<<<<< HEAD
     password: '$6$x8Rm4WtM75/EGQtt$UekWlqYpmIGHKnva2hZ1TJLWsFhMVf2RI45/wB.21B9szyYs4wYzT54Q2hOKs8dt15EdY5wECNCpLvusbMtH4/'
+=======
+    password: krisv
+    shell: /sbin/nologin
+>>>>>>> cae1049bdc0acc361f362667e1a208b9c1e61003
     groups:
       - public
       - management
@@ -70,19 +100,34 @@ rhbase_users:
       - sales
   - name: anc
     comment: 'An Coppens, Graphical designer'
+<<<<<<< HEAD
     password: '$6$gJAvx0eMR2NBTicR$URElJjGXMz3QfhhlqoRruOo8xCj6BnLa0NI14htGzX3eOUDh12nCLmAz0bJnNMUsC/SGabNSWhsLJpKJjRof61'
+=======
+    password: anc
+    shell: /sbin/nologin
+>>>>>>> cae1049bdc0acc361f362667e1a208b9c1e61003
     groups:
       - public
       - technical
   - name: elenaa
     comment: 'Elena Andreev, Office Manager'
+<<<<<<< HEAD
     password: '$6$yTMPCYM7x5yT89EF$MC4eHr3ooAtfKexe2s0GMZXpvT/EN7fizu4lOVRgWRIElCsr4SZau40n26hPd3/dcYbhQ1UROnauB5GAsT.Tv/'
+=======
+    password: elenaa
+    shell: /sbin/nologin
+>>>>>>> cae1049bdc0acc361f362667e1a208b9c1e61003
     groups:
       - public
       - management
   - name: evyt
     comment: 'Evy Tilleman, Technical Writer'
+<<<<<<< HEAD
     password: '$6$XdNa78qW.aOYy7Bs$jQEadZiZ/r2rmkmdBGvRQdda.6jJg0gM9uuLdspiR3VOTZULgGZxujt2Ex/09hQP21ez.5My0Q1VCrYipxomp.'
+=======
+    password: evyt
+    shell: /sbin/nologin
+>>>>>>> cae1049bdc0acc361f362667e1a208b9c1e61003
     groups:
       - public
       - technical
@@ -94,13 +139,19 @@ rhbase_users:
       - it
   - name: stefaanv
     comment: 'Stefaan Vernimmen, Support Specialist'
+<<<<<<< HEAD
     password: '$6$xwoOr209NIwBNue0$pIq0My6eFZB95.orEvMw5HWPh1aV0Z.12TmYUYoH1f1pqO9qWHF1HsXWp8pqvpleZB9r4uVZe1JcHp/eNXpZW1'
+=======
+    password: stefaanv
+    shell: /sbin/nologin
+>>>>>>> cae1049bdc0acc361f362667e1a208b9c1e61003
     groups:
       - public
       - technical
 
 samba_workgroup: AVALON
 samba_server_string: 'Welcome to the AVALON samba server!'
+samba_load_printers: false
 
 samba_users:
   - name: robin
@@ -209,3 +260,4 @@ samba_shares:
 vsftpd_local_root: /srv/shares/
 vsftpd_anonymous_enable: false
 vsftpd_local_enable: true
+vsftpd_local_root: /srv/shares/

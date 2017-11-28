@@ -309,4 +309,3 @@ assert_no_write_access() {
   assert_no_write_access it         svena         svena
   assert_write_access    it         ${admin_user} ${admin_password}
 }
-
