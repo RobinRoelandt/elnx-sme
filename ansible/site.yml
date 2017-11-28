@@ -29,6 +29,7 @@
     - bertvv.rh-base
     - bertvv.samba
     - bertvv.vsftpd
+
 - hosts: pr001
   become: true
   roles:

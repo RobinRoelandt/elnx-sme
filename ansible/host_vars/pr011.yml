@@ -14,87 +14,87 @@ rhbase_user_groups:
 rhbase_users:
   - name: robin
     comment: 'Robin Roelandt'
+    password: '$6$egVvbvv90VbJfp9r$Ia.Uvw1l8qWcQBdUMPfXsEkhr1OHjvdukQhlZMYf1wkW9LJ5tk3uf8r2ko8jiUrJo1Zb7YiGIG8bDj2bpQEzM.'
     groups:
        - wheel
        - users
        - public
        - it
-    password: '$6$MKrF0GjCbSrR6Ii6$X/WcXcAbStkphKt3CCF4F1ayF3Y0cM.c9KfeomMbtSH.ShKxzOoPSXhZwA5OKi36k2kUFxkKVq/YnmEvNyt9G.'
   - name: stevenh
     comment: 'Steven Hermans, CEO'
-    password: stevenh
+    password: '$6$L5oqw6iqXdSdr3Rq$vTgND.PBtiz5rsmOnnIYua5O1BtHH6N/JNrUi.3qdau9scLl/Ex.d2T8Jh50O0Gry0Fuut556a1cSL6ddqEs8/'
     groups:
       - public
       - management
   - name: stevenv
     comment: 'Steven van Daele, software engineer'
-    password: stevenv
+    password: '$6$O8UFipeH1DEPeN/x$Ua4LiQ9FjI2nkHqoavp1D3Wo4HjtrpyVGzUb2Hp7RGXuVjHBadwgpAXMZ.a0YDzvRoZD5myFBUavpQQo4bWA3.'
     groups:
       - public
       - technical
   - name: leend
     comment: 'Leen De Meester, software engineer'
-    password: leend
+    password: '$6$TM.MsRhcl.1N0hpq$MQ8jtellU2ejUv/WC8HJ1gqhnRezVG2EQQPSLKR8DONUdYfcUQinieaCpNAKYUu42OUq5ZXfaBQaBSU7c0irN/'
     groups:
       - public
       - technical
   - name: svena
     comment: 'Sven Aerens, Acount manager'
-    password: svena
+    password: '$6$.1kgQ0nvUnfCA3xn$JbgFXeLL5DL8WEaDEXuxI34rtNNDMXxvWvafq3MHd2XPRAx0xjSOKwG5dIxIJIQZ9Tq12S7homRQyRClPxMpC0'
     groups:
       - public
       - sales
   - name: nehirb
     comment: 'Behir BaÅŸar, System engineer'
-    password: nehirb
+    password: '$6$TTygAOxA8TEElhvT$yRpHMOTwcY/tFEO30raT8To5JikIu3R7hchw6FT5kbzmDTLg6Z3/R8zywzbbVZx.7oOlYIIqlLaep5Eky60OP1'
     groups:
       - public
       - it
   - name: alexanderd
     comment: 'Alexander De Coninck, software engineer'
-    password: alexanderd
+    password: '$6$gjAmhvf8z3xFiJTA$oUSZdQc7HhOcQyFnhlF9r3a28HKwP2w7nJiDNxIhoZ16a5dyr.ZbGAlF556lpiV5uviH5awmPqUTqECSFTym01'
     groups:
       - public
       - technical
   - name: krisv
     comment: 'Kris Vanhaverbeke, CFO'
-    password: krisv
+    password: '$6$x8Rm4WtM75/EGQtt$UekWlqYpmIGHKnva2hZ1TJLWsFhMVf2RI45/wB.21B9szyYs4wYzT54Q2hOKs8dt15EdY5wECNCpLvusbMtH4/'
     groups:
       - public
       - management
   - name: benoitp
     comment: 'Benoit Pluquet, account manager'
-    password: benoitp
+    password: '$6$qJvJufLLePzoC7OC$En8Pjia2xnaZg3xaUjPzQx8YhpFPyk9CBSi1Ok4hxvbczMnloo6mAqqq13CPgcRjIrFmKyjFAAP/96xAFJpmf1'
     groups:
       - public
       - sales
   - name: anc
     comment: 'An Coppens, Graphical designer'
-    password: anc
+    password: '$6$gJAvx0eMR2NBTicR$URElJjGXMz3QfhhlqoRruOo8xCj6BnLa0NI14htGzX3eOUDh12nCLmAz0bJnNMUsC/SGabNSWhsLJpKJjRof61'
     groups:
       - public
       - technical
   - name: elenaa
     comment: 'Elena Andreev, Office Manager'
-    password: elenaa
+    password: '$6$yTMPCYM7x5yT89EF$MC4eHr3ooAtfKexe2s0GMZXpvT/EN7fizu4lOVRgWRIElCsr4SZau40n26hPd3/dcYbhQ1UROnauB5GAsT.Tv/'
     groups:
       - public
       - management
   - name: evyt
     comment: 'Evy Tilleman, Technical Writer'
-    password: evyt
+    password: '$6$XdNa78qW.aOYy7Bs$jQEadZiZ/r2rmkmdBGvRQdda.6jJg0gM9uuLdspiR3VOTZULgGZxujt2Ex/09hQP21ez.5My0Q1VCrYipxomp.'
     groups:
       - public
       - technical
   - name: christophev
     comment: 'Christophe Van der Meersche, System Administrator'
-    password: christophev
+    password: '$6$iktO6r9JgRL03o42$p2CYw2OfDNmyfbSMnIzblkOhstP0lV7IcNvVRmgjKAJ1SoN3RW2.FALilWW0T/6K7weZU22g7lhn0udjgx4zC/'
     groups:
       - public
       - it
   - name: stefaanv
     comment: 'Stefaan Vernimmen, Support Specialist'
-    password: stefaanv
+    password: '$6$xwoOr209NIwBNue0$pIq0My6eFZB95.orEvMw5HWPh1aV0Z.12TmYUYoH1f1pqO9qWHF1HsXWp8pqvpleZB9r4uVZe1JcHp/eNXpZW1'
     groups:
       - public
       - technical
@@ -181,26 +181,31 @@ samba_shares:
     comment: 'public share'
     group: public
     write_list: +public
+
   - name: management
     comment: 'management share'
     group: management
     valid_users: +management
     write_list: +management
+
   - name: technical
     comment: 'technical share'
     group: technical
     valid_users: +public
     write_list: +technical
+
   - name: sales
     comment: 'sales share'
     group: sales
     valid_users: +sales, +management
     write_list: +sales
+
   - name: it
     comment: 'it share'
     group: it
     valid_users: +it, +management
     write_list: +it
 
+vsftpd_local_root: /srv/shares/
 vsftpd_anonymous_enable: false
 vsftpd_local_enable: true
