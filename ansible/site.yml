@@ -29,6 +29,13 @@
     - bertvv.rh-base
     - bertvv.samba
     - bertvv.vsftpd
+  post_tasks:
+    - acl:
+        path: /srv/shares/management/
+        entity: management
+        etype: group
+        permissions: rwx
+        state: present
 
 - hosts: pr001
   become: true
