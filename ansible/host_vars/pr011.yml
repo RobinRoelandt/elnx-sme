@@ -14,6 +14,7 @@ rhbase_user_groups:
 rhbase_users:
   - name: robin
     comment: 'Robin Roelandt'
+    shell: /bin/bash
     password: '$6$egVvbvv90VbJfp9r$Ia.Uvw1l8qWcQBdUMPfXsEkhr1OHjvdukQhlZMYf1wkW9LJ5tk3uf8r2ko8jiUrJo1Zb7YiGIG8bDj2bpQEzM.'
     groups:
        - wheel
@@ -46,6 +47,7 @@ rhbase_users:
       - sales
   - name: nehirb
     comment: 'Behir BaÅŸar, System engineer'
+    shell: /bin/bash
     password: '$6$TTygAOxA8TEElhvT$yRpHMOTwcY/tFEO30raT8To5JikIu3R7hchw6FT5kbzmDTLg6Z3/R8zywzbbVZx.7oOlYIIqlLaep5Eky60OP1'
     groups:
       - public
@@ -88,6 +90,7 @@ rhbase_users:
       - technical
   - name: christophev
     comment: 'Christophe Van der Meersche, System Administrator'
+    shell: /bin/bash
     password: '$6$iktO6r9JgRL03o42$p2CYw2OfDNmyfbSMnIzblkOhstP0lV7IcNvVRmgjKAJ1SoN3RW2.FALilWW0T/6K7weZU22g7lhn0udjgx4zC/'
     groups:
       - public
