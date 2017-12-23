@@ -36,8 +36,8 @@ De regel ```bind_allow_query``` zorgt ervoor dat de server antwoord op DNS-query
 
 Om de opstelling te testen kunnen we de host pu001 en pu002 aanmaken (dit kan met het commando: ```vagrant up pu001 pu002```). Na het voltooien van de installatie kunnen we wederom connecteren met de server door het commando ```vagrant ssh pu001``` en voeren we de tests uit (met het commando: ```sudo /vagrant/test/runbats.sh```). Herhaal de connectie en het uitvoeren van de tests voor server pu002.
 
-[Succesvolle tests DNS master](Screenshots/DNS_master.JPG)
-[Succesvolle tests DNS slave](Screenshots/DNS_slave.JPG)
+![Succesvolle tests DNS master](Screenshots/DNS_master.JPG)
+![Succesvolle tests DNS slave](Screenshots/DNS_slave.JPG)
 
 
 ## Resources
