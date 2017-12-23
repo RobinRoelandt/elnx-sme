@@ -27,7 +27,7 @@ Er is ook een user voor wordpress en mariadb aangemaakt. Deze user heeft beheerr
 
 Om de opstelling te testen kunnen we de host pu004 provisionen aangezien deze al aangemaakt is in het vorige testrapport (dit kan met het commando: ```vagrant provision pu004```). Na het voltooien van de installatie kunnen we wederom connecteren met de server door het commando 'vagrant ssh pu004' en voeren we de tests nogmaals uit (met het commando: ```sudo /vagrant/test/runbats.sh```).
 
-[Succesvolle tests lamp stack](Screenshots/LAMP_stack.JPG)
+![Succesvolle tests lamp stack](Screenshots/LAMP_stack.JPG)
 
 Indien al deze tests slagen zou de webpagina van wordpress te zien moeten zijn door te surfen naar deze ![link](http://192.0.2.50/wordpress).
 De testpagina van Apache is te zien via deze ![link](http://192.0.2.50).
