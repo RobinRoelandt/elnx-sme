@@ -29,8 +29,8 @@ Om de opstelling te testen kunnen we de host pu004 provisionen aangezien deze al
 
 ![Succesvolle tests lamp stack](Screenshots/LAMP_stack.JPG)
 
-Indien al deze tests slagen zou de webpagina van wordpress te zien moeten zijn door te surfen naar deze ![link](http://192.0.2.50/wordpress).
-De testpagina van Apache is te zien via deze ![link](http://192.0.2.50).
+Indien al deze tests slagen zou de webpagina van wordpress te zien moeten zijn door te surfen naar deze [link](http://192.0.2.50/wordpress).
+De testpagina van Apache is te zien via deze [link](http://192.0.2.50).
 
 ## Resources
 
