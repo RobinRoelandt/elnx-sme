@@ -14,8 +14,8 @@ Er zijn voor deze servers geautomatiseerde tests voorzien. De werking kan dus ge
 
 ## Procedure/Documentation
 
-De vereiste rollen worden aangevuld in het ![site.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/site.yml) bestand en de configuratie is te vinden in het ![pu001.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/host_vars/pu004.yml)
-en in het ![pu002.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/host_vars/pu004.yml) bestand.
+De vereiste rollen worden aangevuld in het [site.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/site.yml) bestand en de configuratie is te vinden in het [pu001.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/host_vars/pu004.yml)
+en in het [pu002.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/host_vars/pu004.yml) bestand.
 
 Hier wordt gedefinieërd welke services de firewall door moet laten, in dit geval moeten DNS requests doorgelaten worden.
 
@@ -42,5 +42,5 @@ Om de opstelling te testen kunnen we de host pu001 en pu002 aanmaken (dit kan me
 
 ## Resources
 
-- ![rhbase](https://github.com/bertvv/ansible-role-rh-base)
-- ![bind](https://github.com/bertvv/ansible-role-bind)
+- [rhbase](https://github.com/bertvv/ansible-role-rh-base)
+- [bind](https://github.com/bertvv/ansible-role-bind)
