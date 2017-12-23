@@ -213,4 +213,3 @@ samba_shares:
 vsftpd_local_root: /srv/shares/
 vsftpd_anonymous_enable: false
 vsftpd_local_enable: true
-vsftpd_local_root: /srv/shares/
