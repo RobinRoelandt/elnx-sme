@@ -184,6 +184,7 @@ samba_shares:
   - name: public
     comment: 'public share'
     group: public
+    valid_users: +public
     write_list: +public
 
   - name: management
