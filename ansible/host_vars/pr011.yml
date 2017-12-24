@@ -2,10 +2,20 @@
 rhbase_firewall_allow_services:
   - samba
   - ftp
+  - tftp
+  - tftp-client
+
+samba_workgroup: AVALON
+samba_server_string: 'Welcome to the AVALON samba server!'
+samba_load_printers: false
+samba_load_homes: true
+samba_create_varwww_symlinks: true
+samba_log: /var/log/samba.log
+samba_log_size: 60000
+samba_netbios_name: FILES
 
 rhbase_user_groups:
   - public
-  - management
   - it
   - sales
   - technical
@@ -78,7 +88,7 @@ rhbase_users:
       - technical
   - name: elenaa
     comment: 'Elena Andreev, Office Manager'
-    password: '$6$yTMPCYM7x5yT89EF$MC4eHr3ooAtfKexe2s0GMZXpvT/EN7fizu4lOVRgWRIElCsr4SZau40n26hPd3/dcYbhQ1UROnauB5GAsT.Tv/'
+    password: '$6$worHktNyEO3m1j8/$lVHWLzyHFx6SycgYTYJSzTU6eQylsrrvi4wbsmJjAEmhxMwtmHJS8Xxgdqw92LklFruBJEOB082gR/F7epoe6/'
     groups:
       - public
       - management
@@ -102,83 +112,35 @@ rhbase_users:
       - public
       - technical
 
-samba_workgroup: AVALON
-samba_server_string: 'Welcome to the AVALON samba server!'
-samba_load_printers: false
-
 samba_users:
   - name: robin
     password: robin
-    groups:
-      - it
-      - public
   - name: stevenh
     password: stevenh
-    groups:
-      - public
-      - management
   - name: stevenv
     password: stevenv
-    groups:
-      - public
-      - technical
   - name: leend
     password: leend
-    groups:
-      - public
-      - technical
   - name: svena
     password: svena
-    groups:
-      - public
-      - sales
   - name: nehirb
     password: nehirb
-    groups:
-      - public
-      - it
   - name: alexanderd
     password: alexanderd
-    groups:
-      - public
-      - technical
   - name: krisv
     password: krisv
-    groups:
-      - public
-      - management
   - name: benoitp
     password: benoitp
-    groups:
-      - public
-      - sales
   - name: anc
     password: anc
-    groups:
-      - public
-      - technical
   - name: elenaa
     password: elenaa
-    groups:
-      - public
-      - management
   - name: evyt
     password: evyt
-    groups:
-      - public
-      - technical
   - name: christophev
     password: christophev
-    groups:
-      - public
-      - it
   - name: stefaanv
     password: stefaanv
-    groups:
-      - public
-      - technical
-
-samba_netbios_name: FILES
 
 samba_shares:
   - name: public
@@ -192,6 +154,7 @@ samba_shares:
     group: management
     valid_users: +management
     write_list: +management
+    directory_mode: '0770'
 
   - name: technical
     comment: 'technical share'
@@ -210,6 +173,7 @@ samba_shares:
     group: it
     valid_users: +it, +management
     write_list: +it
+    directory_mode: '0770'
 
 vsftpd_local_root: /srv/shares/
 vsftpd_anonymous_enable: false
