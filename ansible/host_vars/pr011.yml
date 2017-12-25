@@ -146,7 +146,6 @@ samba_shares:
   - name: public
     comment: 'public share'
     group: public
-    valid_users: +public
     write_list: +public
 
   - name: management
@@ -159,7 +158,7 @@ samba_shares:
   - name: technical
     comment: 'technical share'
     group: technical
-    valid_users: +public
+    public: yes
     write_list: +technical
 
   - name: sales
@@ -167,6 +166,7 @@ samba_shares:
     group: sales
     valid_users: +sales, +management
     write_list: +sales
+    directory_mode: '0770'
 
   - name: it
     comment: 'it share'

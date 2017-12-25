@@ -31,13 +31,6 @@
     - bertvv.vsftpd
   post_tasks:
     - acl:
-        path: /srv/shares/technical/
-        default: yes
-        entity: public
-        etype: group
-        permissions: r
-        state: present
-    - acl:
         path: /srv/shares/it/
         default: yes
         entity: management
@@ -51,7 +44,6 @@
         etype: group
         permissions: r
         state: present
-
 - hosts: pr001
   become: true
   roles:
