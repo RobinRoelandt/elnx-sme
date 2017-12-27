@@ -25,7 +25,7 @@ Er is ook een user voor wordpress en mariadb aangemaakt. Deze user heeft beheerr
 
 ## Test report
 
-Om de opstelling te testen kunnen we de host pu004 provisionen aangezien deze al aangemaakt is in het vorige testrapport (dit kan met het commando: ```vagrant provision pu004```). Na het voltooien van de installatie kunnen we wederom connecteren met de server door het commando 'vagrant ssh pu004' en voeren we de tests nogmaals uit (met het commando: ```sudo /vagrant/test/runbats.sh```).
+Om de opstelling te testen kunnen we de host pu004 provisionen aangezien deze al aangemaakt is in het vorige testrapport (dit kan met het commando: ``vagrant provision pu004``). Na het voltooien van de installatie kunnen we wederom connecteren met de server door het commando 'vagrant ssh pu004' en voeren we de tests nogmaals uit (met het commando: ``sudo /vagrant/test/runbats.sh``).
 
 ![Succesvolle tests lamp stack](Screenshots/LAMP_stack.JPG)
 
