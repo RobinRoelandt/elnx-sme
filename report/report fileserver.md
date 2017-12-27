@@ -29,7 +29,7 @@ Bij ``samba_users`` wordt alle gebruikers die een account hebben op de server ee
 
 De VSFTPD parameters zorgen ervoor dat het onmogelijk is om anoniem in te loggen op de server en declareerd de gepaste locatie waar de gebruiker terecht komt na het aanmelden.
 
-In het [site.yml](ansible/site.yml) bestand zijn enkele ACL's te vinden. Deze dienen om de gebruikers toegang te geven tot shares terwijl ze geen lid zijn van de correcte gebruikersgroep.
+In het [site.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/site.yml) bestand zijn enkele ACL's te vinden. Deze dienen om de gebruikers toegang te geven tot shares terwijl ze geen lid zijn van de correcte gebruikersgroep.
 
 ## Test report
 
