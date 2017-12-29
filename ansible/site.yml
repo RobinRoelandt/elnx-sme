@@ -32,6 +32,7 @@
   post_tasks:
      - acl: name=/srv/shares/it/ entity=management etype=group permissions=rx state=present
      - acl: name=/srv/shares/sales/ entity=management etype=group permissions=rx state=present
+     - acl: name=/srv/shares/technical/ entity=public etype=group permissions=rx state=present
 
 - hosts: pr001
   become: true
