@@ -30,26 +30,8 @@
     - bertvv.samba
     - bertvv.vsftpd
   post_tasks:
-    - acl: name=/srv/shares/sales/ entity=elenaa etype=user permissions="rx" state=present
-    - acl: name=/srv/shares/sales/ entity=krisv etype=user permissions="rx" state=present
-    - acl: name=/srv/shares/sales/ entity=stevenh etype=user permissions="rx" state=present
-    - acl: name=/srv/shares/it/ entity=elenaa etype=user permissions="rx" state=present
-    - acl: name=/srv/shares/it/ entity=krisv etype=user permissions="rx" state=present
-    - acl: name=/srv/shares/it/ entity=stevenh etype=user permissions="rx" state=present
-#    - acl:
-#        path: /srv/shares/it/
-#        default: yes
-#        entity: management
-#        etype: group
-#        permissions: r
-#        state: present
-#    - acl:
-#        path: /srv/shares/sales/
-#        default: yes
-#        entity: management
-#        etype: group
-#        permissions: r
-#        state: present
+     - acl: name=/srv/shares/it/ entity=management etype=group permissions=rx state=present
+     - acl: name=/srv/shares/sales/ entity=management etype=group permissions=rx state=present
 
 - hosts: pr001
   become: true
