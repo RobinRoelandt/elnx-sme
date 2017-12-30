@@ -41,8 +41,7 @@ set nat source rule 100 translation address masquerade
 
 set system ntp server '0.be.pool.ntp.org'
 set system ntp server '1.be.pool.ntp.org'
-set system time-zone 'UTC'
-#time zone nog aanpassen!!!
+set system time-zone 'Europe/Brussels'
 #
 
 #
