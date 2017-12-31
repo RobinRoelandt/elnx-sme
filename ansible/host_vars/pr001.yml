@@ -25,5 +25,5 @@ dhcp_subnets:
 
 dhcp_hosts:
   - name: host
-    mac: 08:00:27:dd:8f:8d
+    mac: 08:00:27:88:4A:5E
     ip: 172.16.128.100
