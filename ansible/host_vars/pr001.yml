@@ -5,6 +5,8 @@ rhbase_firewall_allow_services:
   - dhcp
 
 dhcp_global_max_lease_time: 43200
+dhcp_global_subnet_mask: 255.255.0.0
+dhcp_global_routers: 172.16.255.254
 dhcp_global_domain_name: 'avalon.lan'
 dhcp_global_domain_name_servers:
   - 192.0.2.10
@@ -16,12 +18,14 @@ dhcp_subnets:
     domain_name_servers:
       - 192.0.2.10
       - 192.0.2.11
-    routers: 172.16.255.254
     range_begin: 172.16.192.1
     range_end: 172.16.255.253
-    default_lease_time: 43200
+    default_lease_time: 21600
 
 dhcp_hosts:
   - name: host
-    mac: 08:00:27:dd:8f:8d
+    mac: '08:00:27:dd:8f:8d'
     ip: 172.16.128.100
+  - name: WAN
+    mac: '08:00:27:28:d5:52'
+    ip: 10.0.2.15

@@ -5,12 +5,22 @@
   roles:
     - bertvv.rh-base
     - bertvv.bind
+  post_tasks:
+    - name: Adding default route
+      command: ip route add default via 192.0.2.254
+    - name: restart network service
+      command: service network restart
 
 - hosts: pu002
   become: true
   roles:
     - bertvv.rh-base
     - bertvv.bind
+  post_tasks:
+    - name: Adding default route
+      command: ip route add default via 192.0.2.254
+    - name: restart network service
+      command: service network restart
 
 - hosts: pu004
   become: true
@@ -20,8 +30,13 @@
     - bertvv.httpd
     - bertvv.wordpress
   pre_tasks:
-  - copy: src=files/ca.crt dest=/etc/pki/tls/certs
-  - copy: src=files/ca.key dest=/etc/pki/tls/private/ca.key
+    - copy: src=files/ca.crt dest=/etc/pki/tls/certs
+    - copy: src=files/ca.key dest=/etc/pki/tls/private/ca.key
+  post_tasks:
+    - name: Adding default route
+      command: ip route add default via 192.0.2.254
+    - name: restart network service
+      command: service network restart
 
 - hosts: pr011
   become: true

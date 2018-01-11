@@ -4,6 +4,7 @@ rhbase_firewall_allow_services:
   - ftp
   - tftp
   - tftp-client
+  - ssh
 
 samba_workgroup: AVALON
 samba_server_string: 'Welcome to the AVALON samba server!'
