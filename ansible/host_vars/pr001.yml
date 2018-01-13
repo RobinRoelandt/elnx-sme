@@ -3,11 +3,8 @@ rhbase_forewall_allow_services:
     - dhcp
 
 dhcp_global_max_lease_time: 43200
-
 dhcp_global_subnet_mask: 255.255.0.0
-
 dhcp_global_routers: 172.16.255.254
-
 dhcp_global_domain_name: 'avalon.lan'
 
 dhcp_subnets:
