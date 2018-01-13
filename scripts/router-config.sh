@@ -33,7 +33,7 @@ set system gateway-address 10.0.2.15
 
 # TODO
 set nat source rule 100 outbound-interface 'eth0'
-set nat source rule 100 source address '192.0.2.0/24'
+set nat source rule 100 source address '172.6.0.0/16'
 set nat source rule 100 translation address 'masquerade'
 
 set nat source rule 200 outbound-interface 'eth0'
