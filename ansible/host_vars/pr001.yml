@@ -1,6 +1,7 @@
+---
 rhbase_forewall_allow_services:
-    - ssh
-    - dhcp
+  - ssh
+  - dhcp
 
 dhcp_global_max_lease_time: 43200
 
@@ -14,21 +15,9 @@ dhcp_subnets:
 
  - ip: 172.16.0.0
    netmask: 255.255.0.0
-   domain_name_servers:
-    - 192.0.2.10
-    - 192.0.2.11
    range_begin: 172.16.192.1
    range_end: 172.16.255.253
    default_lease_time: 144000
-
- - ip: 10.0.2.0
-   netmask: 255.255.255.0
-   domain_name_servers:
-     - 192.0.2.10
-     - 192.0.2.11
-   range_begin: 10.0.2.1
-   range_end: 10.0.2.253
-   default_lease_time: 21600
 
 dhcp_hosts:
      - name: robin

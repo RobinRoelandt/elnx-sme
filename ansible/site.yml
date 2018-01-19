@@ -54,8 +54,4 @@
   roles:
     - bertvv.rh-base
     - bertvv.dhcp
-  post_tasks:
-    - name: Adding default route
-      command: ip route add default via 192.0.2.254
-    - name: restart network service
-      command: service network restart
+    
