@@ -16,7 +16,6 @@ rhbase_users:
       comment: 'Robin Roelandt'
       groups:
          - wheel
-         - users
       password: '$6$egVvbvv90VbJfp9r$Ia.Uvw1l8qWcQBdUMPfXsEkhr1OHjvdukQhlZMYf1wkW9LJ5tk3uf8r2ko8jiUrJo1Zb7YiGIG8bDj2bpQEzM.'
 rhbase_motd: true
 #rhbase_ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDmbUjVcBLTKQpZwxRRniXiyrCW+y5G9H96UPx9Bb9a9UfH7dXuo349AmuXtlxp9g0hA7n8uriTy5AiR/VKSWRRYq3zYTPMutHPftmHZXUgi/k5dg34bDtPfy0hnVd96kr+15o+3zWK+MK/5U+1jw1zyE1xkwHMk1DIj/uBUz7V9pwtrZiFKGnIMzvWB3RD0YHpdYfXkMR985RaWcvSY9lAYLwydLkEZkotzMgSwYFpUovyFGkRtZrjti4MtTs0vSb8YgQmfrah+daaGtWmLpbMwlYOefA2tAppZC0HRcuMG1fWk5PfnqsIlGg7KfBiqDaB/yGz7UTQAesWwvpOBktd robin@Laptop-Robin
