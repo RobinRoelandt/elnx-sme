@@ -85,9 +85,8 @@ sudo systemctl start httpd
 |Te controleren                         |Gebruikte commando's                |Correct?|
 | :---                                  | :---                               |:---    |
 |Configuratie DNSMasq controleren       |sudo vi /etc/hosts                  |   V    |
-|Configuratie httpd controleren         |sudo vi /etc/httpd/conf/httpd.conf  |   V    |
 |Configuratie dhcp                      |sudo vi /etc/dhcp/dhcpd.conf        |   V    |
-
+|Configuratie httpd controleren         |sudo vi /etc/httpd/conf/httpd.conf  |   V    |
 
 ### Conclusie
 
