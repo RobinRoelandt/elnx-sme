@@ -16,7 +16,7 @@
 
 |Te controleren|Verwachte waarde                                   |Gebruikte commando's|Correct?|
 | :---         | :---                                              | :---               | :---   |
-|IP adress     |Indien NAT: 10.0.2.15, Intern: 172.20.0.254        |ip a                |   V    |
+|IP adress     |Indien NAT: 10.0.2.15/24, Intern: 172.20.0.254/24  |ip a                |   V    |
 |DG            |Indien NAT: 10.0.2.2, Intern: 172.20.0.0           |ip r                |   V    |
 |DNS server    |10.0.2.3, 172.20.0.254                             |cat /ect/resolv.conf|   V    |
 
@@ -47,7 +47,7 @@
 
 |Te controleren|Verwachte waarde                                   |Gebruikte commando's|Correct?|
 | :---         | :---                                              | :---               | :---   |
-|IP adress     |NAT: 10.0.2.15 Intern: 172.20.0.2                  |ip a                |   V    |
+|IP adress     |NAT: 10.0.2.15/24, Intern: 172.20.0.2/24           |ip a                |   V    |
 |DG            |Indien NAT: 10.0.2.2, intern: 172.20.0.0           |ip r                |   V    |
 |DNS server    |10.0.2.3                                           |cat /ect/resolv.conf|   V    |
 
@@ -87,3 +87,8 @@ sudo systemctl start httpd
 |Configuratie DNSMasq controleren       |sudo vi /etc/hosts                  |   V    |
 |Configuratie httpd controleren         |sudo vi /etc/httpd/conf/httpd.conf  |   V    |
 |Configuratie dhcp                      |sudo vi /etc/dhcp/dhcpd.conf        |   V    |
+
+
+### Conclusie
+
+Na het toepassen van al deze fixes voor de verschillende problemen slagen alle acceptatie testen op het workstation en is het mogelijk om via handmatige controle de werking van de verschillende services te verifiëren op het systeem.
