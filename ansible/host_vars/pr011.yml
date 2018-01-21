@@ -13,7 +13,7 @@ samba_load_homes: true
 samba_create_varwww_symlinks: true
 samba_log: /var/log/samba.log
 samba_log_size: 60000
-samba_netbios_name: FILES
+samba_netbios_name: 'FILES'
 
 rhbase_user_groups:
   - public
