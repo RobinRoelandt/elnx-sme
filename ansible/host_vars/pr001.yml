@@ -1,5 +1,6 @@
+# host_vars/pr001.yml
 ---
-rhbase_forewall_allow_services:
+rhbase_firewall_allow_services:
   - ssh
   - dhcp
 
@@ -19,10 +20,10 @@ dhcp_subnets:
    range_end: 172.16.255.253
    default_lease_time: 144000
 
-#dhcp_hosts:
-#     - name: robin
-#       mac: '08:00:27:82:77:2A'
-#       ip: 172.16.128.10
-#     - name: WAN
-#       mac: '08:00:27:B1:24:DE'
-#       ip: 10.0.2.15
+dhcp_hosts:
+     - name: robin
+       mac: '08:00:27:82:77:2A'
+       ip: 172.16.128.10
+     - name: WAN
+       mac: '08:00:27:B1:24:DE'
+       ip: 10.0.2.15

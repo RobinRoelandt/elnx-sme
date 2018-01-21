@@ -1,3 +1,4 @@
+# host_vars/pu002.yml
 ---
 
 rhbase_firewall_allow_services:

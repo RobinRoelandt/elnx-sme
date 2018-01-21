@@ -78,7 +78,7 @@ sudo systemctl start dnsmasq
 commando's om dit probleem op te lossen:
 sudo systemctl start httpd
 
-(permanent starten van service bij booten: chkconfig httpd)
+(permanent starten van service bij booten: chkconfig httpd on)
 
 ## Applicatielaag
 
