@@ -5,11 +5,18 @@
 
 ## Doel van de taak
 
-- Describe the goals of the current iteration/assignment in a short sentence.
+Een server opzetten met behulp van ansible die ervoor zorgt dat clients die aangesloten zijn op het netwerk dynamisch een IP adres of een gereserveerd IP adres (op basis van het MAC adres) toegewezen krijgen.
 
 ## Test plan
 
-How are you going to verify that the requirements are met? The test plan is a detailed checklist of actions to take, including the expected result for each action, in order to prove your system meets the requirements. Part of this is running the automated tests, but it is not always possible to validate *all* requirements throught these tests.
+Voor deze server zijn er geen automatische tests voorzien, dus dient de werking van de server handmatig gecontroleerd te worden.
+Hiervoor dient een nieuwe virtuele machine aangemaakt te worden in Virtualbox en dient men op deze machine Ubuntu te installeren.
+Na het succesvol installeren van Ubuntu past u de netwerkadapters van de virtuele machine aan en zorgt u ervoor dat er 2 host-only adapters voorzien zijn met als netwerkinstellingen 172.16.0.0 255.255.0.0.
+
+Noteer het MAC van 1 van de adapters en voeg dit toe aan de ansible configuratie en laat het script nogmaals runnen op de server.
+
+Start na het succesvol aflopen van het script de virtuele machine opnieuw op en verifieër dat er een IP adres is uitgedeeld in de correcte range en dat het gereserveerde IP correct is via het commando ``ip a`` in de terminal.
+(De range van IP adressen die uitgedeeld morgen worden is: 172.16.192.1 tot 172.16.255.253)
 
 ## Procedure/Documentation
 
