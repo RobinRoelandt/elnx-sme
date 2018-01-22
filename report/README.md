@@ -1,13 +1,13 @@
 ## Overzicht van alle documentatie in verband met de opdracht
 
-- [Rapport server configuratie](report_server_config.md)
-- [Rapport LAMP stack](report_LAMP_stack.md)
-- [Rapport DNS servers](report_DNS_server.md)
-- [Rapport Fileserver](report_fileserver.md)
-- [Rapport DHCP server](report_DHCP.md)
+- [Rapport server configuratie](report-server-config.md)
+- [Rapport LAMP stack](report-LAMP-stack.md)
+- [Rapport DNS servers](report-DNS-server.md)
+- [Rapport Fileserver](report-fileserver.md)
+- [Rapport DHCP server](report-DHCP.md)
 
 
 ## Andere documentatie
 
-- [Rapport troubleshooting](rapport_troubleshooting.md)
+- [Rapport troubleshooting](rapport-troubleshooting.md)
 - [Cheat sheet](cheat-sheet.md)
