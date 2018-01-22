@@ -30,4 +30,5 @@ The test report is a transcript of the execution of the test plan, with the actu
 
 ## Resources
 
-List all sources of useful information that you encountered while completing this assignment: books, manuals, HOWTO's, blog posts, etc.
+- [rhbase](https://github.com/bertvv/ansible-role-rh-base)
+- [dhcp](https://github.com/bertvv/ansible-role-dhcp)
