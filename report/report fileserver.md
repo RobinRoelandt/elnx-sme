@@ -38,7 +38,7 @@ De server wordt aangemaakt (met het commando ``vagrant up pr011``) en kan er is 
 ![Succesvolle tests samba](Screenshots/Samba.JPG)
 ![Succesvolle tests vsftpd](Screenshots/VSFTPD.JPG)
 
-De werking van de server werd ook getest met de FTP client Filezilla.
+De werking van de server werd ook getest met de FTP client Filezilla op de hostmachine van de VM.
 
 ![Succesvolle connectie](Screenshots/Filezilla)
 

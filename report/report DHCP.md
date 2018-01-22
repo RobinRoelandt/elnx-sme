@@ -20,13 +20,30 @@ Start na het succesvol aflopen van het script de virtuele machine opnieuw op en 
 
 ## Procedure/Documentation
 
-Describe *in detail* how you completed the assignment, with main focus on the "manual" work. It is of course not necessary to copy/paste your code in this document, but you can refer to it with a hyperlink.
+De vereiste rollen worden aangevuld in het [site.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/site.yml) bestand en de configuratie van deze rollen is te vinden in [pu001.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/host_vars/pr001.yml)
 
-Make sure to write clean Markdown code, so your report looks good and is clearly structured on Github.
+In dit bestand wordt gedefinieërd welke services de firewall door moet laten, in dit geval moet DHCP verkeer doorgelaten worden.
+
+De maximale tijd dat een host hetzelfde IP mag behouden zonder opnieuw te onderhandelen met de server is 12 uur en dit wordt gedefinieërd door de parameter ``dhcp_global_max_lease_time``
+
+``dhcp_global_subnet_mask`` zorgt ervoor dat de correcte subnetmask aan DHCP wordt doorgegeven.
+
+``dhcp_global_routers`` zorgt ervoor dat de service weet waar het de router kan vinden van dit netwerk.
+
+De naam avalon.lan wordt meegegeven via de parameter ``dhcp_global_domain_name``
+
+Subnet declaraties kunnen gebeuren onder ``dhcp_subnets`` en reserveren van IP adressen kan via ``dhcp_hosts``
+
+
+Deze server is niet zonder moeilijkheden opgesteld. Zo liep ik tegen verschillende fouten aan waarover dan een [troubleshooting rapport](rapport.md) is bijgevoegd in het project.
+
 
 ## Test report
 
-The test report is a transcript of the execution of the test plan, with the actual results. Significant problems you encountered should also be mentioned here, as well as any solutions you found. The test report should clearly prove that you have met the requirements.
+Om de opstelling te kunnen testen maken we de server pr001 aan (dit kan met het commando ``vagrant up pr001``). Na het voltooien van de installatie, booten we de client die geïnstalleerd is tijdens het testplan en openen we op deze VM een terminal. Met het commando ``ip a`` kan u controleren of de IP's de verwachte waarden hebben en zo de werking van DHCP verifiëren.
+
+![Succesvolle test DHCP](Screenshots/DHCP.JPG)
+
 
 ## Resources
 
