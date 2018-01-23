@@ -92,5 +92,5 @@ sudo systemctl start httpd
 
 Na het toepassen van al deze fixes voor de verschillende problemen slagen alle acceptatie testen op het workstation en is het mogelijk om via handmatige controle de werking van de verschillende services te verifiëren op het systeem.
 
-[Geslaagde tests](Screenshots/tests_troubleshooting.JPG)
+![Geslaagde tests](Screenshots/tests_troubleshooting.JPG)
 
