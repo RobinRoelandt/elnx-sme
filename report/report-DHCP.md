@@ -35,7 +35,7 @@ De naam avalon.lan wordt meegegeven via de parameter ``dhcp_global_domain_name``
 Subnet declaraties kunnen gebeuren onder ``dhcp_subnets`` en reserveren van IP adressen kan via ``dhcp_hosts``
 
 
-Deze server is niet zonder moeilijkheden opgesteld. Zo liep ik tegen verschillende fouten aan waarover dan een [troubleshooting rapport](rapport.md) is bijgevoegd in het project.
+Deze server is niet zonder moeilijkheden opgesteld. Zo liep ik tegen verschillende fouten aan waarover dan een [troubleshooting rapport](rapport-troubleshooting-DHCP.md) is bijgevoegd in het project.
 
 
 ## Test report

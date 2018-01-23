@@ -16,7 +16,6 @@ set service ssh port '22'
 # IP settings
 #
 
-# TODO
 set interfaces ethernet eth0 address dhcp
 set interfaces ethernet eth0 description 'WAN'
 
@@ -30,7 +29,6 @@ set interfaces ethernet eth2 description 'internal'
 # Network Address Translation
 #
 
-# TODO
 set nat source rule 100 outbound-interface 'eth0'
 set nat source rule 100 source address '172.16.0.0/16'
 set nat source rule 100 translation address 'masquerade'
@@ -53,7 +51,6 @@ set system time-zone 'Europe/Brussels'
 # Domain Name Service
 #
 
-# TODO
 set service dns forwarding domain avalon.lan server 192.0.2.10
 set service dns forwarding dhcp 'eth0'
 set service dns forwarding listen-on 'eth1'
