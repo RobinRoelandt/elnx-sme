@@ -1,16 +1,16 @@
-#Troubleshooten SME Entreprise Linux
+# Troubleshooten SME Entreprise Linux
 
 - Gemaakt door: Robin Roelandt
 - Datum: 20/1/2018
 
-##Netwerklaag
+## Netwerklaag
 
 |Te controleren                 |Verwachte waarde               |Gebruikte commando's|Correct?|
 | :---                          | :---                          |:---                |:---    |
 |Is de kabel correct aangesloten|De kabel is correct aangesloten|ip link             |   V    |
 
 
-##Internetlaag
+## Internetlaag
 
 |Te controleren|Verwachte waarde                                   |Gebruikte commando's|Correct?|
 | :---         | :---                                              | :---               | :---   |
@@ -20,13 +20,13 @@
 
 
 
-##Transportlaag
+## Transportlaag
 |Te controleren                 |Verwachte waarde          |Gebruikte commando's          |Correct?|
 | :---                          | :---                     | :---                         | :---   |
 |Draait Service                 |Ja                        |sudo systemctl status dhcpd   |   X    |
 |Correcte poort/interface       |68                        |sudo ss -tulpn                |   V    |
 |Firewall instellingen          |dhcp in lijst van services|sudo firewall-cmd --list-all  |   X    |
-####Hoe zijn de problemen opgelost?
+#### Hoe zijn de problemen opgelost?
 - De fout in de logs bij het starten van de service:
 
 No subnet declaration for enp0s8 (176.16.0.2).
@@ -43,7 +43,7 @@ Commando's om fout handmatig te verbeteren:
 
 --> Hierna is de DHCP service nog altijd niet op te starten
 
-##Applicatielaag
+## Applicatielaag
 
 |Te controleren                         |Gebruikte commando's                                   |Correct?|
 | :---                                  | :---                                                  |:---    |
