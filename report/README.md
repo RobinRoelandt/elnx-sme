@@ -5,6 +5,7 @@
 - [Rapport DNS servers](report-DNS-server.md)
 - [Rapport Fileserver](report-fileserver.md)
 - [Rapport DHCP server](report-DHCP.md)
+- [Rapport Client](report-client-test.md)
 
 
 ## Andere documentatie

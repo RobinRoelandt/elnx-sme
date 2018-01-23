@@ -17,15 +17,15 @@ Er zijn voor deze servers geautomatiseerde tests voorzien. De werking kan dus ge
 De vereiste rollen worden aangevuld in het [site.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/site.yml) bestand en de configuratie is te vinden in het [pu001.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/host_vars/pu001.yml)
 en in het [pu002.yml](https://github.com/RobinRoelandt/elnx-sme/blob/master/ansible/host_vars/pu002.yml) bestand.
 
-Hier wordt gedefinieërd welke services de firewall door moet laten, in dit geval moeten DNS requests doorgelaten worden.
+Hier wordt gedefinieerd welke services de firewall door moet laten, in dit geval moeten DNS requests doorgelaten worden.
 
-De naam van de DNS zone is aangepast naar avalon.lan en het ip van de master DNS server is ``192.0.2.10``
+De naam van de DNS-zone is aangepast naar avalon.lan en het IP van de master DNS-server is ``192.0.2.10``
 
-Bij ``bind_zone_networks`` worden de netwerken gedefinieërd waar de server een DNS record voor dient te voorzien. In dit geval is dat voor de netwerken ``192.0.2, 172.16, 10``.
+Bij ``bind_zone_networks`` worden de netwerken gedefinieerd waar de server een DNS-record voor dient te voorzien. In dit geval is dat voor de netwerken ``192.0.2, 172.16, 10``.
 
-De ``bind_zone_name_servers`` definiëren welke servers in het netwerk de DNS services voorzien.
+De ``bind_zone_name_servers`` definiëren welke servers in het netwerk de DNS-services voorzien.
 
-De DNS records worden gedeclareerd bij ``bind_zone_hosts``
+De DNS-records worden gedeclareerd bij ``bind_zone_hosts``
 
 Eventuele mailservers kunnen toegewezen worden bij ``bind_zone_mail_servers``
 
