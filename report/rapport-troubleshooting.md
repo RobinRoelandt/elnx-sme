@@ -54,9 +54,9 @@
 ## Transportlaag
 |Te controleren                 |Verwachte waarde          |Gebruikte commando's          |Correct?|
 | :---                          | :---                     | :---                         | :---   |
-|Draait Service                 |Ja                        |sudo systemctl status dnsmasq |   X    |
-|Draait Service                 |Ja                        |sudo systemctl status dhcpd   |   X    |
-|Draait Service                 |Ja                        |sudo systemctl status httpd   |   X    |
+|Draait Service                 |Running                   |sudo systemctl status dnsmasq |   X    |
+|Draait Service                 |Running                   |sudo systemctl status dhcpd   |   X    |
+|Draait Service                 |Running                   |sudo systemctl status httpd   |   X    |
 |Correcte poort/interface       |53, 67, 68                |sudo ss -tulpn                |   V    |
 |Firewall instellingen          |services: dhcp, dns, http |sudo firewall-cmd --list-all  |   V    |
 
