@@ -15,9 +15,26 @@ W4:
 - Bezig met LAMP -> tandje bijsteken!
 - Gebruik `host_vars/SERVER.yml` en `group_vars/all.yml` voor instellingen specifiek voor je opstelling. De code van de rollen moet ongewijzigd blijven! Anders zijn ze niet herbruikbaar.
 
+Problemen via e-mail tijdens examenperiode:
+
+- DHCP-server "werkt niet"
+    - start niet op, "no subnet declaration for enp0s8"
+    - Fout in IP-adres (176.16.0.2 ipv 172.16.0.2). Niet opgemerkt, ook na tips ivm vergelijken IP-adres pr011 op enp0s8 met dat van de subnetdeclaratie
+    - Default GW opnieuw ingesteld op verkeerd IP-adres (192.0.2.254, wat buiten het eigen subnet 172.16.0.0/16 ligt)
+    - Verkeerde DNS-servers ingesteld voor werkstations (192.0.2.10-11 ipv de router)
+- Geeft blijk van onvoldoende inzicht op niveau 3 TCP/IP!
+
+Eindevaluatie:
+
+- Acceptatietests: LAMP, DNS, fileserver: ok!
+- Werkstation:
+    - Internettoegang & lokale website ok
+    - Samba via NetBIOS ok
+    - FTP via FQDN ok
+
 ### Eindbeoordeling
 
-O1: <BEOORDELING>
+O1: Deskundig
 
 ## Troubleshooting
 
@@ -54,29 +71,37 @@ Beoordeling: nog niet bekwaam
 
 ### Derde troubleshooting-opdracht
 
-
+Ok!
 
 ### Eindbeoordeling
 
-O2: <BEOORDELING>
+O2: Bekwaam
 
 ## Opdracht Actualiteit
 
+- Squirrelmail-rol voor Ansible geschreven, samen met Florian
+- Eigen commits vooral documentatie
+
 ### Eindbeoordeling
 
-O3: <BEOORDELING>
+O3: Bekwaam
 
 ## Rapportering
 
 ### Laboverslagen
 
-R1: <BEOORDELING>
+R1: Deskundig
 
 ### Demonstraties
 
-R2: <BEOORDELING>
+- Voorbereiding op papier, vrij vlot
+- Kon de FTP-server niet zelf demonstreren
+
+R2: Gevorderd
 
 ### Cheat sheet
 
-R3: <BEOORDELING>
+Niet systematisch bijgehouden, 1 commit een paar dagen voor eindevaluatie
+
+R3: Nog niet bekwaam
 
